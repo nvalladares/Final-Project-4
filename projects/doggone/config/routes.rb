@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'static_pages/about'
-
-  get 'static_pages/help'
-
   root :to => redirect('/posts')
   resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
