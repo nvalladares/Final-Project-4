@@ -7,11 +7,13 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Bangers', cursive;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  background-image: url(http://i.imgur.com/RebwpaO.png?1);
+  font-family: 'Bangers', cursive;
   margin: 0;
   text-align: center;
 }
@@ -63,6 +65,7 @@ dfn {
   font-style: italic;
 }
 h1 {
+  font-family: 'Bangers', cursive;
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -78,7 +81,7 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
+  vertica-align: baseline;
 }
 sup {
   top: -0.5em;
@@ -106,7 +109,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Bangers', cursive;
   font-size: 1em;
 }
 button,
@@ -256,16 +259,15 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot');
-  src: url('http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'), url('http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  font-family: 'Bangers', cursive;
+  src: url(http://fonts.googleapis.com/css?family=Bangers);
+  src: url(http://fonts.googleapis.com/css?family=Bangers);
 }
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
+  font-family: 'Bangers', cursive;
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
@@ -1072,9 +1074,10 @@ th {
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+/*location where I added google font to change font of entire app*/
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Bangers', cursive;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -1085,12 +1088,14 @@ button,
 select,
 textarea {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 20px;
   line-height: inherit;
 }
 a {
-  color: rgba(90, 158, 242, 0.98);
+  color: rgba(107, 112, 112, 0.98);
   text-decoration: none;
+  font-size: 15px;
+  padding-left: 15px;
 }
 a:hover,
 a:focus {
@@ -1176,10 +1181,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Bangers', cursive;
   font-weight: 500;
   line-height: 1.1;
-  color: #317eac;
+  color:rgba(107, 112, 112, 0.98);
 }
 h1 small,
 h2 small,
@@ -1205,7 +1210,7 @@ h6 .small,
 .h4 .small,
 .h5 .small,
 .h6 .small {
-  font-weight: normal;
+  font-family: 'Bangers', cursive;
   line-height: 1;
   color: #999999;
 }
@@ -1257,7 +1262,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 40px;
 }
 h2,
 .h2 {
@@ -1470,6 +1475,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
+  font-family: 'Bangers', cursive;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
@@ -2501,6 +2507,7 @@ label {
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 20px;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -2513,8 +2520,11 @@ input[type="checkbox"] {
   margin-top: 1px \9;
   line-height: normal;
 }
+/*changed 'block' to 'inline' so that choose file button would be centered*/
 input[type="file"] {
-  display: block;
+  display:inline-block;
+  padding-left: 150px;
+  margin-bottom: 15px;
 }
 input[type="range"] {
   display: block;
@@ -4241,6 +4251,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
+    display: inline-block;
     padding-left: 0;
     padding-right: 0;
   }
@@ -4304,8 +4315,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
+  color: #2B3856;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 20px;
   height: 50px;
 }
@@ -4314,7 +4326,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -4523,11 +4535,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgba(90, 158, 242, 0.98);
+  background-color: rgba(56, 136, 230, 0.98);
   border-color: rgba(59, 140, 240, 0.98);
 }
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #2B3856;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4538,7 +4550,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #dddddd;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color:#2B3856;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4548,7 +4560,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
+  color:#2B3856;;
   background-color: rgba(43, 130, 238, 0.98);
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -5040,8 +5052,8 @@ a.badge:focus {
 }
 .thumbnail > img,
 .thumbnail a > img {
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  display: inline-block;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5322,7 +5334,7 @@ button.list-group-item {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   z-index: 2;
-  color: #ffffff;
+  color: #2B3856;
   background-color: rgba(90, 158, 242, 0.98);
   border-color: rgba(90, 158, 242, 0.98);
 }
@@ -6768,9 +6780,9 @@ button.close {
   }
 }
 .navbar {
-  background-image: -webkit-linear-gradient(rgba(128, 180, 245, 0.98), rgba(90, 158, 242, 0.98) 60%, rgba(71, 147, 241, 0.98));
+  /*background-image: -webkit-linear-gradient(rgba(128, 180, 245, 0.98), rgba(90, 158, 242, 0.98) 60%, rgba(71, 147, 241, 0.98));
   background-image: -o-linear-gradient(rgba(128, 180, 245, 0.98), rgba(90, 158, 242, 0.98) 60%, rgba(71, 147, 241, 0.98));
-  background-image: linear-gradient(rgba(128, 180, 245, 0.98), rgba(90, 158, 242, 0.98) 60%, rgba(71, 147, 241, 0.98));
+  background-image: linear-gradient(rgba(128, 180, 245, 0.98), rgba(90, 158, 242, 0.98) 60%, rgba(71, 147, 241, 0.98));*/
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa80b4f5', endColorstr='#fa4793f1', GradientType=0);
   border-bottom: 1px solid rgba(43, 130, 238, 0.98);
@@ -6897,5 +6909,12 @@ button.close {
 
 body { padding-top: 100px; }
 footer { margin-top: 100px; }
-table, td, th { vertical-align: middle; border: none; }
-th { border-bottom: 1px solid #DDD; }
+table, td, th { 
+  display: inline-block; 
+  border: none; 
+  padding: 5px;
+  }
+th { 
+  border-bottom: 1px solid #DDD; 
+  display: inline-block;
+  padding-left: 30px;}
